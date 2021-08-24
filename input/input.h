@@ -35,11 +35,6 @@ namespace std
 			return get_input<unsigned char>();
 		}
 
-		operator char()
-		{
-			return get_input<char>();
-		}
-
 		operator bool()
 		{
 			return get_input<bool>();
