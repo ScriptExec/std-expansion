@@ -1,17 +1,19 @@
 #pragma once
-#ifndef RANGE_H
-#define RANGE_H
+#ifndef STDE_RANGE_H
+#define STDE_RANGE_H
 #include <type_traits>
 
-namespace std
+namespace stde
 {
 	template< typename NumberType = int, typename = typename std::enable_if<std::is_arithmetic<NumberType>::value, NumberType>::type  >
-	class range {
+	class range
+	{
 	private:
 		bool reversed;
 		NumberType step;
 
-		class range_iterator {
+		class range_iterator
+		{
 		private:
 			bool reversed = false;
 			NumberType step = 1;

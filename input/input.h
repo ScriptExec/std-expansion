@@ -1,11 +1,11 @@
 #pragma once
-#ifndef INPUT_H
-#define INPUT_H
+#ifndef STDE_INPUT_H
+#define STDE_INPUT_H
 
 #include <iostream>
 #include <string>
 
-namespace std
+namespace stde
 {
 	class input
 	{
