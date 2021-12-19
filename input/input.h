@@ -112,10 +112,10 @@ namespace stde
 
 			std::cout << _message;
 			std::cin >> _input;
-			while (cin.fail())
+			while (std::cin.fail())
 			{
-				cin.clear();
-				cin.ignore(numeric_limits<streamsize>::max(), '\n');
+				std::cin.clear();
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 				std::cin >> _input;
 			}
 
